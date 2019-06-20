@@ -24,9 +24,11 @@ Além disso, a tecnologia de contêineres permite que a máquina seja montada em
 [![Docker](https://img.youtube.com/vi/QFuOggpDAOw/0.jpg)](https://www.youtube.com/watch?v=QFuOggpDAOw)
 
 
+## Imagens e Layers
+
 A base para um novo container é chamada de imagem. Uma imagem contém a aplicação e todas as dependências que esta precisar para executar.
 
-
+[Docker – Images vs Layers](https://gago.io/blog/docker-images-vs-layers/)
 
 
 ## Pra quê serve?
@@ -95,11 +97,20 @@ https://github.com/luizcarlosfaria/kb/wiki/Docker-no-Windows-vs-Docker-no-Linux
 
 # Cursos e tutoriais
 
-https://github.com/luizcarlosfaria/kb/wiki
+- https://github.com/luizcarlosfaria/kb/wiki
+
+- [Docker Compose: simplificando o deployment de aplicações](https://gago.io/blog/2018-canal-dotnet-docker-compose/)
+
+- [Como criar uma imagem Docker a partir de um Container utilizando o Docker commit](http://devopslab.com.br/docker-como-criar-uma-imagem-docker-a-partir-de-um-container-utilizando-o-docker-commit/)
+
+- [How to commit changes to a docker image](https://www.techrepublic.com/article/how-to-commit-changes-to-a-docker-image/)
+
+- [SQL Server for Linux](https://gago.io/blog/docker-de-az-16-sql-server-for-linux/)
+
 
 #### Cursos de Docker (em Espanhol):
 
-[Curso Completo](https://www.youtube.com/playlist?list=PLn5IkU1ZhgiZl4EH7AFkqs-pqF6ZUz_iS)
+- [Curso Completo](https://www.youtube.com/playlist?list=PLn5IkU1ZhgiZl4EH7AFkqs-pqF6ZUz_iS)
 
-[Curso de Docker en Windows Server 2019](https://www.youtube.com/playlist?list=PLn5IkU1ZhgiZP8EewgFdxgnsIwN1q3Juo)
+- [Curso de Docker en Windows Server 2019](https://www.youtube.com/playlist?list=PLn5IkU1ZhgiZP8EewgFdxgnsIwN1q3Juo)
 
