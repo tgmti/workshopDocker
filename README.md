@@ -170,7 +170,11 @@ https://docker.totvs.io
 ### Nos clientes
 - Padronização de ambientes em novas implantações
 - Métodos de montagem rápida de bases de teste em clientes pequenos
-- Liberdade de escolha para clientes grandes utilizarem provedores de nuvem conceituados
+- Liberdade de escolha utilizarem provedores de nuvem conceituados
+  - AWS
+  - Google
+  - Azure
+  - Digital Ocean
 
 
 # Riscos e Segurança
