@@ -7,7 +7,7 @@
 
 ## O quê é?
 
-Tenologia de gerenciamento de contêineres que fornece uma camada de abstração da infraestrutura e automação de vitualização do sistema operacionais e aplicações.
+Tecnologia de gerenciamento de contêineres que fornece uma camada de abstração da infraestrutura e automação de virtualização do sistema operacionais e aplicações.
 
 
 ## O que é container?
@@ -18,15 +18,17 @@ Diferente de uma máquina virtual, o sistema operacional do Container não utili
 
 ![Diferenças entre Docker e Máquinas virtuais](assets/img/docker_x_vmachine.png)
 
-
-Além disso, a tecnologia de contêineres permite que a máquina seja montada em camadas, chamadas de Layers.
-
 [![Docker](https://img.youtube.com/vi/QFuOggpDAOw/0.jpg)](https://www.youtube.com/watch?v=QFuOggpDAOw)
 
 
 ## Imagens e Layers
 
-A base para um novo container é chamada de imagem. Uma imagem contém a aplicação e todas as dependências que esta precisar para executar.
+- Um Docker Image é um binário que inclui todos os requisitos necessários para rodar um Container, como se fosse um snapshot de uma VM completa, já com a aplicação instalada, pronto para rodar.
+- Cada vez que o comando `docker run` é executado, uma nova máquina é criada, com base na "receita" definida pela imagem
+-  Além disso, as imagens são montadas em camadas, chamadas de Layers.
+-  Os layers são compartilhados entre as imagens do sistema, fazendo com que o consumo de recursos seja extremamente otimizado.
+- O compartilhamento é possível pois todas as Layers do container são "somente leitura", apenas a camada mais superior é leitura e escrita
+- Se alguma aplicação modifica algum arquivo de uma layer superior, o container vai copiar este arquivo para a camada superior antes de alterar. Isso é extremamente otimizado pelo sistema de arquivos do Docker
 
 [Docker – Images vs Layers](https://gago.io/blog/docker-images-vs-layers/)
 
@@ -113,4 +115,18 @@ https://github.com/luizcarlosfaria/kb/wiki/Docker-no-Windows-vs-Docker-no-Linux
 - [Curso Completo](https://www.youtube.com/playlist?list=PLn5IkU1ZhgiZl4EH7AFkqs-pqF6ZUz_iS)
 
 - [Curso de Docker en Windows Server 2019](https://www.youtube.com/playlist?list=PLn5IkU1ZhgiZP8EewgFdxgnsIwN1q3Juo)
+
+
+# Docker na TOTVS
+
+https://docker.totvs.io
+
+[Imagens prontas para montar ambiente de desenvolvimento](https://docker.totvs.io/harbor/projects/36/repositories)
+
+[Imagens dos artefatos da engenharia](https://docker.totvs.io/harbor/projects/37/repositories)
+
+
+[Dev Sandbox - Extenção para VsCode](https://code.engpro.totvs.com.br/vinicius.fragazi/dcp-extension)
+
+[Exemplo de arquivos para montar um ambiente completo](https://totvstfs.visualstudio.com/DevCenterProtheus/_git/docker-builds)
 
