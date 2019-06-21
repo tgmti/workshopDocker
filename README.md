@@ -16,6 +16,8 @@ Container é uma forma de isolar a aplicação do sistema operacional Host, em r
 
 Diferente de uma máquina virtual, o sistema operacional do Container não utiliza um hardware emulado, mas sim a camada de comunicação do próprio host para acessar o Hardware (Kernel).
 
+Um container precisa e deve ter somente o mínimo necessário pra rodar a aplicação. O que torna estes binários extremamente pequenos, quando comparados com outras formas de disponibilização de aplicações.
+
 ![Diferenças entre Docker e Máquinas virtuais](assets/img/docker_x_vmachine.png)
 
 [![Docker](https://img.youtube.com/vi/QFuOggpDAOw/0.jpg)](https://www.youtube.com/watch?v=QFuOggpDAOw)
@@ -117,7 +119,13 @@ https://github.com/luizcarlosfaria/kb/wiki/Docker-no-Windows-vs-Docker-no-Linux
 - [Curso de Docker en Windows Server 2019](https://www.youtube.com/playlist?list=PLn5IkU1ZhgiZP8EewgFdxgnsIwN1q3Juo)
 
 
-# Docker na TOTVS
+# Guias de Instalação
+
+- [Windows 10 Pro](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+- [Windows 10 Home ou versões anteriores](https://docs.docker.com/toolbox/overview/)
+
+
+# Docker e TOTVS
 
 https://docker.totvs.io
 
@@ -125,8 +133,46 @@ https://docker.totvs.io
 
 [Imagens dos artefatos da engenharia](https://docker.totvs.io/harbor/projects/37/repositories)
 
-
 [Dev Sandbox - Extenção para VsCode](https://code.engpro.totvs.com.br/vinicius.fragazi/dcp-extension)
 
 [Exemplo de arquivos para montar um ambiente completo](https://totvstfs.visualstudio.com/DevCenterProtheus/_git/docker-builds)
 
+[Imagens desde a versão 11](https://github.com/endersonmaia/totvs-protheus-docker)
+
+[SQL Server for Linux]()
+
+
+# Criando imagens próprias
+
+- Registry
+- Dockerfile
+- Docker Commit
+- Docker Push
+
+
+# Ambientes completos e serviços
+
+- Docker Compose
+- Orquestradores (Swarm e Kubernetes)
+
+
+# Brainstorm - Possíveis aplicações
+
+### Internamente
+- Scripts de automação para aplicação de Patches conforme alterado código no repositório
+- Bases de teste "Congeladas" com Add-On´s e Aceleradores, para desenvolvimento/testes
+- Bases para compilação automática de alterações
+- Bases para execução de testes automatizados
+- Bases demo para cereais e telecom
+- Bases para a equipe de suporte
+- Criar rapidamente ambiente para novos analistas
+
+### Nos clientes
+- Padronização de ambientes em novas implantações
+- Métodos de montagem rápida de bases de teste em clientes pequenos
+- Liberdade de escolha para clientes grandes utilizarem provedores de nuvem conceituados
+
+
+# Riscos e Segurança
+
+[Segurança de Containers](https://www.mundodocker.com.br/seguranca-e-hacking-de-containers-docker/)
